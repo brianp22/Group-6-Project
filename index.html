@@ -76,28 +76,45 @@
     <a class="item">Sign-in</a>
   </div>
 
-  <div class="ui styled fluid accordion">
-    <div class="active title">
-      <i class="dropdown icon"></i>
-      What is a dog?
+  <div class="container-fluid">
+    <div class="ui top fixed menu">
+      <a class="trafficjam">Traffic Jam</a>
     </div>
-    <div class="active content">
-      <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+      <!-- Search -->
+      <div class="ui search">
+        <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="Search countries...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    <!-- Google Maps -->
+    <div class="row">
+      <img id="google-maps" src="assets/images/google_maps.png" alt="google-maps">
     </div>
-    <div class="title">
-      <i class="dropdown icon"></i>
-      What kinds of dogs are there?
+    <!-- Current Conditions -->
+    <div class="row2">
+      <div class="ui centered card" id="current-conditions">
+        <div class="content">
+          <a class="header">Current Conditions</a>
+        </div>
+      </div>
+
     </div>
-    <div class="content">
-      <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
-    </div>
-    <div class="title">
-      <i class="dropdown icon"></i>
-      How do you acquire a dog?
-    </div>
-    <div class="content">
-      <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
-      <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+
+    <!-- Weather -->
+    <div class="row3"></div>
+
+
+
+
+    <!-- Spotify Playlist -->
+    <div class="row4">
+      <div class="spotify">
+        <iframe src="https://open.spotify.com/embed/playlist/6YmMcIcm5Zrs37rXIGfhLD" width="780" height="120"
+          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <script src="./Assets/script.js"></script>
     </div>
   </div>
   <h3 class="ui top attached header">
