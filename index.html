@@ -65,6 +65,20 @@
   </div>
 
     <script src="./Assets/script.js"></script>
+    <script>
+      function myMap() {
+      var mapProp= {
+        center:new google.maps.LatLng(39.9415,-75.1995),
+        zoom:15,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      var marker = new google.maps.Marker({
+      position: {lat: 39.9415, lng:-75.1995},
+      map: map,
+      title: "Pennovation Nation"
+      })
+      }
+      </script>
 </body>
 <footer><p>Traffic Jamn © Copyright 2020</p></footer>
 </html>
