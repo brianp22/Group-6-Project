@@ -2,6 +2,22 @@
   box-sizing: border-box;
 }
 
+.container-fluid {
+    margin: 0 auto;
+    width: 780px;
+    padding-top: 90px;
+}
+
+.trafficjam {
+    margin: 0 auto;
+    text-align: center;
+    display: block; /* Make the buttons appear below each other */
+}
+
+.ui {
+    display:block;
+}
+
 .menu {
     position: fixed;
     left: 0;
@@ -26,4 +42,18 @@ footer {
     padding-top: 20px;
     height: 10px font-size: small;
     background: #E8E8E8;
-  }
+
+}
+
+#google-maps {
+    width:780px;
+    display:block;
+    padding-top: 20px;
+}
+
+#current-conditions {
+    margin:20px;
+    text-align: center;
+}
+
+
