@@ -25,12 +25,6 @@ $(document).ready(function () {
     // if (window.location.hostname === "localhost" || window.location.hostname === "") {
     //   queryURL = "https://cors-anywhere.herokuapp.com/" + queryURL;
     // };
-    
-    var queryURL = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + userInput + "&inputtype=textquery&key=%20" + APIKey;
-    if (window.location.hostname === "localhost" || window.location.hostname === "") {
-      queryURL = "https://cors-anywhere.herokuapp.com/" + queryURL;
-    };
-
     $.ajax({
       url: queryURL,
       method: "GET",
