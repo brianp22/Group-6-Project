@@ -28,14 +28,20 @@
       <!-- Search -->
       <div class="ui search">
         <div class="ui icon input">
-          <input class="prompt" type="text" placeholder="Search countries...">
-          <i class="search icon"></i>
+          <input class="prompt" id = "userSearch" type="text" placeholder="Search countries...">
+          <i class="search icon" id="searchButton"></i>
         </div>
         <div class="results"></div>
       </div>
     <!-- Google Maps -->
-    <div class="row">
-      <img id="google-maps" src="assets/images/google_maps.png" alt="google-maps">
+    <div class="row" id="googleMapHolder">
+        <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCK-KjOG3ByKBQXY9ZLDK-S2Vrj1TkQwWw
+            &q=Pennovation+Center,Philadelphia+PA" allowfullscreen>
+        </iframe>
     </div>
     <!-- Current Conditions -->
     <div class="row2">
@@ -134,6 +140,7 @@
       })
       }
       </script>
+      
 </body>
 <footer><p>Traffic Jamn © Copyright 2020</p></footer>
 </html>
