@@ -23,7 +23,7 @@
   }
   
   .ui.icon.input {
-      padding-top: 20px
+      padding-top: 20px;
       outline-width: 0;
   }
   
@@ -98,7 +98,8 @@
       padding-bottom: 10px;
       margin: 0;
       padding-top: 20px;
-      height: 10px font-size: small;
+      height: 10px;
+      font-size: small;
       background: #E8E8E8;
   }
   
@@ -143,7 +144,7 @@
       text-align: center;
   }
   
-  .ui.centered.card {s
+  .ui.centered.card {
       width: 100%;
       box-shadow: none;
   }
