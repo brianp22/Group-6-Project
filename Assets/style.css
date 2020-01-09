@@ -1,143 +1,178 @@
 * {
-  box-sizing: border-box;
-}
-
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-body {
-    font-family: 'Asap', sans-serif;
-    font-size: 18px;
+    box-sizing: border-box;
   }
   
-.ui.search {
-    background-color: #991A4E;
-    padding: 50px;
-    padding-top: 140px;
-    width: 100%;
-}
-
-.ui.icon.input{
-    outline-width: 0;
-}
-
-.search.icon {
+  .container-fluid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+  
+  body {
+      font-family: 'Asap', sans-serif;
+      font-size: 18px;
+    }
+    
+  .ui.search {
+      background-color: #991A4E;
+      padding: 50px;
+      padding-top: 150px;
+      width: 100%;
+  }
+  
+  .ui.icon.input {
+      padding-top: 20px
+      outline-width: 0;
+  }
+  
+  .search.icon {
+      color: #991A4E;
+  }
+  
+  .card.header {
     color: #991A4E;
-}
-
-.card.header {
-  color: #991A4E;
-  font-weight: bolder;
-}
-
-.row {
-    width: 100%;
-    height: 450px;
-}
-
-.row2 {
-    width: 100%;
-}
-
-.ui.icon.input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.prompt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-#current-conditions {
-    background-image: url("./images/background-01.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 600px;
-    background-position: top center !important;
-    background-size: cover;
-    align-items: center;
-}
-
-.ui.centered.card {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-}
-
-.ui.container {
+    font-weight: bolder;
+  }
+  
+  .row {
+      width: 100%;
+      height: 450px;
+  }
+  
+  .row2 {
+      width: 100%;
+  }
+  
+  .ui.icon.input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .prompt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+  }
+  
+  #current-conditions {
+      background-image: url("./images/background-01.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 600px;
+      background-position: top center !important;
+      background-size: cover;
+      align-items: center;
+  }
+  
+  .ui.centered.card {
+      width: 100%;
+      padding-top: 150px;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .ui.container {
+      padding-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .content {
+      padding-top: 20px;
+  }
+  
+  .menu {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 10px;
+      margin: 0;
+      padding-top: 20px;
+      height: 10px font-size: small;
+      background: #E8E8E8;
+  }
+  
+  footer {
+      background-color: #991A4E;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      color:white;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 60px;
+      margin: 0;
+      padding-top: 30px;
+      height: 20px;
+      font-size: 20px;
+  }
+  
+  #traffic-jam {
+      margin: 0 auto;
+      width:280px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  
+  .google-maps {
+      width: 100%;
+      height: 450px;
+  }
+  
+  .ui.card {
+      display: inline-block;
+      padding: 15px;
+      align-items: center;
+      margin: 10px;
+      margin-top: 0 !important;
+      height: 150px;
+      box-shadow: none;
+  }
+    
+  .header {
+      text-align: center;
+  }
+  
+  .ui.centered.card {s
+      width: 100%;
+      box-shadow: none;
+  }
+  
+  .spotify-playlist {
+      width: 100%;
+      height: 220px;
+  }
+  
+  #fivehourforecast{
     padding-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.content {
-    padding-top: 20px;
-}
-
-.menu {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 10px;
-    margin: 0;
-    padding-top: 20px;
-    height: 10px;
-    font-size: small;
-    background: #E8E8E8;
-}
-
-footer {
-    background-color: #991A4E;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    color:white;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 60px;
-    margin: 0;
-    padding-top: 20px;
-    height: 10px; 
-    font-size: small;
-    background: #E8E8E8;
-}
-
-#traffic-jam {
-    margin: 0 auto;
-    width:280px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.google-maps {
-    width: 100%;
-    height: 450px;
-}
-
-.ui.card {
-    display: inline-block;
-    padding: 15px;
-    align-items: center;
-    margin: 10px;
-    margin-top: 0 !important;
-    height: 150px;
-    box-shadow: none;
-}
+  }
+  
+  .row {
+      background: #dddfe2;
+      z-index: 10;
+  }
+  
+  iframe {
+      mix-blend-mode: luminosity;
+  }
+  
+  .ui.top.attached.label {
+      background-color: #991A4E;
+      color: white;
+      font-size: 15px;
+  }
+  
+  
   
 .header {
     text-align: center;
