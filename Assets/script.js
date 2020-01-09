@@ -15,15 +15,14 @@ $(document).ready(function () {
  
   var testAddress1 = "5217+Ridge+Avenue+Philadelphia,PA";
 
-  // var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=" + alexander1 + "&destinations=" + destinationvariable + "&key=" + APIKey
   $("#searchButton").on("click", function() {
     console.log("button works");
     var APIKey = "AIzaSyCK-KjOG3ByKBQXY9ZLDK-S2Vrj1TkQwWw";
     var userInput = $("#userSearch").val();
-    var queryURL = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + userInput + "&inputtype=textquery&key=%20" + APIKey;
-    if (window.location.hostname === "localhost" || window.location.hostname === "") {
-      queryURL = "https://cors-anywhere.herokuapp.com/" + queryURL;
-    };
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + userInput + "&inputtype=textquery&key=%20" + APIKey;
+    // if (window.location.hostname === "localhost" || window.location.hostname === "") {
+    //   queryURL = "https://cors-anywhere.herokuapp.com/" + queryURL;
+    // };
     $.ajax({
       url: queryURL,
       method: "GET",
