@@ -3,19 +3,88 @@
 }
 
 .container-fluid {
-    margin: 0 auto;
-    width: 780px;
-    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.trafficjam {
-    margin: 0 auto;
+body {
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+  }
+  
+.ui.search {
+    background-color: #991A4E;
+    padding: 50px;
+    padding-top: 140px;
+    width: 100%;
+}
+
+.ui.icon.input{
+    outline-width: 0;
+}
+
+.search.icon {
+    color: #991A4E;
+}
+
+.card.header {
+  color: #991A4E;
+  font-weight: bolder;
+}
+
+.row {
+    width: 100%;
+    height: 450px;
+}
+
+.row2 {
+    width: 100%;
+}
+
+.ui.icon.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#current-conditions {
+    background-image: url("./images/background-01.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    background-position: top center !important;
+    background-size: cover;
+    align-items: center;
+}
+
+.ui.centered.card {
+    width: 100%;
+    align-items: center;
     text-align: center;
-    display: block; /* Make the buttons appear below each other */
 }
 
-.ui {
-    display:block;
+.ui.container {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding-top: 20px;
 }
 
 .menu {
@@ -33,12 +102,14 @@
 }
 
 footer {
+    background-color: #991A4E;
     position: fixed;
     left: 0;
     bottom: 0;
+    color:white;
     text-align: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     margin: 0;
     padding-top: 20px;
     height: 10px; 
@@ -46,14 +117,29 @@ footer {
     background: #E8E8E8;
 }
 
-#google-maps {
-    width:780px;
-    display:block;
-    padding-top: 20px;
+#traffic-jam {
+    margin: 0 auto;
+    width:280px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#current-conditions {
-    margin:20px;
+.google-maps {
+    width: 100%;
+    height: 450px;
+}
+
+.ui.card {
+    display: inline-block;
+    padding: 15px;
+    align-items: center;
+    margin: 10px;
+    margin-top: 0 !important;
+    height: 150px;
+    box-shadow: none;
+}
+  
+.header {
     text-align: center;
 }
 
