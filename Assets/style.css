@@ -159,7 +159,7 @@ footer {
       font-size: 15px;
   }
   
-  
+ 
   #fivehour {
     background-color: #F0F0F0;
 }
@@ -168,15 +168,18 @@ footer {
 }
 i::before {
     pointer-events: all;
+
+    padding-top: 9px;
     padding-top:9px;
 }
 i:hover {
     cursor: pointer;
 }
-
 .ui.top.fixed.menu{
     height:100px;
 }
 
-
+.ui.top.fixed.menu{
+    height:100px;
+}
 
