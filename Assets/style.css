@@ -181,11 +181,14 @@
 
 i::before {
     pointer-events: all;
+    padding-top: 9px;
 
 }
 
 i:hover {
     cursor: pointer;
 }
-
+.ui.top.fixed.menu{
+    height:100px;
+}
 
