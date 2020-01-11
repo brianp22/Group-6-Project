@@ -51,47 +51,37 @@
       <div class="row3">
         <div class="ui centered card" id="fivehourforecast">
           <div class="content">
-            <div class="header">5 Hour Forecast</div>
+            <div class="header">5 Day Forecast</div>
             <div class="ui container">
               <div class="ui card" id="fivehour">
-                <div class="ui top attached label">
-                  1 HOUR
+                <div id="dayOne" class="ui top attached label">
                 </div>
                 <img id="weatherIconTwo" id="weatherIconTwo"></img>
-                <p class="temp" id="tempTwo">Temp: </p>
-                <p class="humid" id="humidTwo">Humidity: </p>
+                <p class="temp" id="tempTwo"></p>
               </div>
               <div class="ui card" id="fivehour">
-                <div class="ui top attached label">
-                  2 HOUR
+                <div id="dayTwo" class="ui top attached label">
                 </div>
-                <img id="weatherIconTwo" id="weatherIconThree"></img>
-                <p class="temp" id="tempThree">Temp: </p>
-                <p class="humid" id="humidThree">Humidity: </p>
+                <img id="weatherIconThree"></img>
+                <p class="temp" id="tempThree"></p>
               </div>
               <div class="ui card" id="fivehour">
-                <div class="ui top attached label">
-                  3 HOUR
+                <div id="dayThree" class="ui top attached label">
                 </div>
-                <img id="weatherIconTwo" id="weatherIconFour"></img>
-                <p class="temp" id="tempFour">Temp: </p>
-                <p class="humid" id="humidFour">Humidity: </p>
+                <img id="weatherIconFour"></img>
+                <p class="temp" id="tempFour"></p>
               </div>
               <div class="ui card" id="fivehour">
-                <div class="ui top attached label">
-                  4 HOUR
+                <div id="dayFour" class="ui top attached label">
                 </div>
-                <img id="weatherIconTwo" id="weatherIconFive"></img>
-                <p class="temp" id="tempFive">Temp: </p>
-                <p class="humid" id="humidFive">Humidity: </p>
+                <img id="weatherIconFive"></img>
+                <p class="temp" id="tempFive"></p>
               </div>
               <div class="ui card" id="fivehour">
-                <div class="ui top attached label">
-                  5 HOUR
+                <div id="dayFive" class="ui top attached label">
                 </div>
-                <img id="weatherIconTwo" id="weatherIconSix"></img>
-                <p class="temp" id="tempSix">Temp: </p>
-                <p class="humid" id="humidsix">Humidity: </p>
+                <img id="weatherIconSix"></img>
+                <p class="temp" id="tempSix"></p>
               </div>
             </div>
           </div>
@@ -119,6 +109,7 @@
       })
       }
       </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
       
 </body>
 <footer><p>Traffic Jam © Copyright 2020</p></footer>
