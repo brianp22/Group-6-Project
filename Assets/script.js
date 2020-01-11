@@ -32,7 +32,7 @@ $(document).ready(function () {
       // We store all of the retrieved data inside of an object called "response"
     .then(function (response) {
       console.log(response.predictions[0].place_id)
-      $("#googleMapHolder").html("<iframe id='georgeclooney' width='600' height='450' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyCK-KjOG3ByKBQXY9ZLDK-S2Vrj1TkQwWw&origin=" + userInput + "&destination=3401+Grays+Ferry+Ave+Philadelphia,PA&zoom=8' allowfullscreen></iframe>")
+      $("#googleMapHolder").html("<iframe id='georgeclooney' width='100%' height='450' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyCK-KjOG3ByKBQXY9ZLDK-S2Vrj1TkQwWw&origin=" + userInput + "&destination=3401+Grays+Ferry+Ave+Philadelphia,PA&zoom=8' allowfullscreen></iframe>")
     })
   });
 
