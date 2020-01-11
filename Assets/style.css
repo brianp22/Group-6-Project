@@ -1,66 +1,58 @@
 * {
     box-sizing: border-box;
-  }
-  
-  .container-fluid {
+}
+.container-fluid {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-  }
-  
-  body {
+}
+body {
       font-family: 'Asap', sans-serif;
       font-size: 18px;
-    }
-    
-  .ui.search {
+}
+.ui.search {
       background-color: #991A4E;
       padding: 50px;
-      padding-top: 150px;
+      padding-top: 140px;
       width: 100%;
   }
   
-  .ui.icon.input {
+  .ui.icon.input{
+}
+.ui.icon.input {
       padding-top: 20px;
       outline-width: 0;
-  }
-  
-  .search.icon {
+}
+.search.icon {
       color: #991A4E;
-  }
-  
-  .card.header {
+}
+.card.header {
     color: #991A4E;
     font-weight: bolder;
-  }
-  
-  .row {
+}
+.row {
       width: 100%;
       height: 450px;
-  }
-  
-  .row2 {
+}
+.row2 {
       width: 100%;
-  }
-  
-  .ui.icon.input {
+}
+.ui.icon.input {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-  }
-  
-  .prompt {
+}
+.prompt {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
-  }
-  
-  #current-conditions {
+}
+#current-conditions {
       background-image: url("./images/background-01.png");
       background-position: center center;
       background-repeat: no-repeat;
@@ -69,27 +61,22 @@
       background-position: top center !important;
       background-size: cover;
       align-items: center;
-  }
-  
-  .ui.centered.card {
+}
+.ui.centered.card {
       width: 100%;
-      padding-top: 150px;
       align-items: center;
       text-align: center;
-  }
-  
-  .ui.container {
+}
+.ui.container {
       padding-top: 20px;
       width: 100%;
       display: flex;
       justify-content: center;
-  }
-  
-  .content {
+}
+.content {
       padding-top: 20px;
-  }
-  
-  .menu {
+}
+.menu {
       position: fixed;
       left: 0;
       bottom: 0;
@@ -98,12 +85,10 @@
       padding-bottom: 10px;
       margin: 0;
       padding-top: 20px;
-      height: 10px;
-      font-size: small;
+      height: 10px font-size: small;
       background: #E8E8E8;
-  }
-  
-  footer {
+}
+footer {
       background-color: #991A4E;
       position: fixed;
       left: 0;
@@ -116,21 +101,18 @@
       padding-top: 30px;
       height: 20px;
       font-size: 20px;
-  }
-  
-  #traffic-jam {
+}
+#traffic-jam {
       margin: 0 auto;
       width:280px;
       padding-left: 10px;
       padding-right: 10px;
-  }
-  
-  .google-maps {
+}
+.google-maps {
       width: 100%;
       height: 450px;
-  }
-  
-  .ui.card {
+}
+.ui.card {
       display: inline-block;
       padding: 15px;
       align-items: center;
@@ -138,56 +120,65 @@
       margin-top: 0 !important;
       height: 150px;
       box-shadow: none;
-  }
-    
-  .header {
+}
+.header {
       text-align: center;
-  }
+ }
   
-  .ui.centered.card {
+  .ui.centered.card {s
+
+}
+.ui.centered.card {
+
       width: 100%;
       box-shadow: none;
-  }
-  
-  .spotify-playlist {
+}
+.spotify-playlist {
       width: 100%;
       height: 220px;
+
   }
   
+  #fivehour {
+      background-color: #F0F0F0;
+
+}
   #fivehourforecast{
     padding-top: 20px;
   }
-  
   .row {
-      background: #dddfe2;
+      background: #DDDFE2;
       z-index: 10;
   }
-  
   iframe {
       mix-blend-mode: luminosity;
   }
-  
   .ui.top.attached.label {
       background-color: #991A4E;
       color: white;
       font-size: 15px;
   }
   
-  
-  
+ 
+  #fivehour {
+    background-color: #F0F0F0;
+}
 .header {
     text-align: center;
 }
-
 i::before {
     pointer-events: all;
+
     padding-top: 9px;
-
+    padding-top:9px;
 }
-
 i:hover {
     cursor: pointer;
 }
+.ui.top.fixed.menu{
+    height:100px;
+}
+
 .ui.top.fixed.menu{
     height:100px;
 }
