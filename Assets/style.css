@@ -18,12 +18,11 @@
   .ui.search {
       background-color: #991A4E;
       padding: 50px;
-      padding-top: 150px;
+      padding-top: 140px;
       width: 100%;
   }
   
-  .ui.icon.input {
-      padding-top: 20px;
+  .ui.icon.input{
       outline-width: 0;
   }
   
@@ -73,7 +72,6 @@
   
   .ui.centered.card {
       width: 100%;
-      padding-top: 150px;
       align-items: center;
       text-align: center;
   }
@@ -98,8 +96,7 @@
       padding-bottom: 10px;
       margin: 0;
       padding-top: 20px;
-      height: 10px;
-      font-size: small;
+      height: 10px font-size: small;
       background: #E8E8E8;
   }
   
@@ -144,7 +141,7 @@
       text-align: center;
   }
   
-  .ui.centered.card {
+  .ui.centered.card {s
       width: 100%;
       box-shadow: none;
   }
@@ -154,8 +151,8 @@
       height: 220px;
   }
   
-  #fivehourforecast{
-    padding-top: 20px;
+  #fivehour {
+      background-color: #F0F0F0;
   }
   
   .row {
@@ -174,18 +171,3 @@
   }
   
   
-  
-.header {
-    text-align: center;
-}
-
-i::before {
-    pointer-events: all;
-
-}
-
-i:hover {
-    cursor: pointer;
-}
-
-
