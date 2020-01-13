@@ -19,8 +19,7 @@ body {
       width: 100%;
   }
   
-  .ui.icon.input{
-}
+
 .ui.icon.input {
       padding-top: 20px;
       outline-width: 0;
@@ -35,9 +34,20 @@ body {
 .row {
       width: 100%;
       height: 450px;
+      background: #DDDFE2;
+      z-index: 10;
 }
 .row2 {
       width: 100%;
+      display: none;
+
+}
+.row3{
+      width: 100%;
+}
+
+.row4{
+      height:265px;
 }
 .ui.icon.input {
       display: flex;
@@ -57,7 +67,7 @@ body {
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      height: 600px;
+      height: 400px;
       background-position: top center !important;
       background-size: cover;
       align-items: center;
@@ -74,7 +84,8 @@ body {
       justify-content: center;
 }
 .content {
-      padding-top: 20px;
+      padding-top: 500px;
+      width: 100%;
 }
 .menu {
       position: fixed;
@@ -85,7 +96,8 @@ body {
       padding-bottom: 10px;
       margin: 0;
       padding-top: 20px;
-      height: 10px font-size: small;
+      height: 10px; 
+      font-size: small;
       background: #E8E8E8;
 }
 footer {
@@ -96,11 +108,11 @@ footer {
       color:white;
       text-align: center;
       width: 100%;
-      padding-bottom: 60px;
+      padding-bottom: 30px;
       margin: 0;
-      padding-top: 30px;
-      height: 20px;
-      font-size: 20px;
+      padding-top: 15px;
+      height: 10px;
+      font-size: 12px;
 }
 #traffic-jam {
       margin: 0 auto;
@@ -125,31 +137,22 @@ footer {
       text-align: center;
  }
   
-  .ui.centered.card {s
-
-}
 .ui.centered.card {
-
+      padding-top: 100px;
       width: 100%;
       box-shadow: none;
+      height:50px;
 }
 .spotify-playlist {
       width: 100%;
       height: 220px;
 
   }
-  
-  #fivehour {
-      background-color: #F0F0F0;
 
-}
   #fivehourforecast{
     padding-top: 20px;
   }
-  .row {
-      background: #DDDFE2;
-      z-index: 10;
-  }
+
   iframe {
       mix-blend-mode: luminosity;
   }
@@ -160,9 +163,7 @@ footer {
   }
   
  
-  #fivehour {
-    background-color: #F0F0F0;
-}
+  
 .header {
     text-align: center;
 }
@@ -185,4 +186,19 @@ i:hover {
 #fivehour {
     background-color: #c2ccd6;
     height: 200px;
+    width: 150px;
+}
+
+#googleMapHolder{
+      padding-bottom: 20px;
+}
+
+
+#ui_container{
+      width: 100%;
+}
+
+.loadedResults{
+      color:black;
+
 }
