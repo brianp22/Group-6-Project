@@ -3,7 +3,8 @@ Traffic Jam is a navigation application with some additional features that revol
 It uses HTML, CSS, Javascript, JQuery, embedded objects (iframes), Semantic UI Framework, and several API calls.
 [Link to repo] (https://github.com/brianp22/Group-6-Project)
 [Link to page] (https://brianp22.github.io/Group-6-Project/index.html)
-![mobile copy](https://user-images.githubusercontent.com/44029053/72295790-40150d00-3626-11ea-809c-4a003acbc6c4.png)
+![mobile](https://user-images.githubusercontent.com/44029053/72300229-2b8a4200-3631-11ea-883d-f4e8962f9aa6.png)
+
 # User Story
 I AM A bootcamp student
 I WANT a convenient navigation app to get me to bootcamp
