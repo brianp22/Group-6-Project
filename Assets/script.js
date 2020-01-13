@@ -25,6 +25,10 @@ $(document).ready(function () {
     // if (window.location.hostname === "localhost" || window.location.hostname === "") {
     //   queryURL = "https://cors-anywhere.herokuapp.com/" + queryURL;
     // };
+    function showTrafficJam() {
+      $(".row2").css('display', 'block');
+    }
+
     $.ajax({
       url: queryURL,
       method: "GET",
@@ -32,77 +36,78 @@ $(document).ready(function () {
       // We store all of the retrieved data inside of an object called "response"
       .then(function (response) {
         console.log(response.predictions[0].place_id)
-        $("#googleMapHolder").html("<iframe id='georgeclooney' width='100%' height='450' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyCK-KjOG3ByKBQXY9ZLDK-S2Vrj1TkQwWw&origin=" + userInput + "&destination=3401+Grays+Ferry+Ave+Philadelphia,PA&zoom=8' allowfullscreen></iframe>")
+        $("#googleMapHolder").html("<iframe id='georgeclooney' width='100%' height='450' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyCK-KjOG3ByKBQXY9ZLDK-S2Vrj1TkQwWw&origin=" + userInput + "&destination=3401+Grays+Ferry+Ave+Philadelphia,PA&zoom=12' allowfullscreen></iframe>")
       })
-    
-          //Brittany edits
 
-          function fiveDay() {
-            var location = "Philadelphia"
-            var brittanyApiKey = "06606e544a946ac567964601f7ed0813";
-            var fiveDayQueryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=imperial&appid=" + brittanyApiKey;
-    
-            $.ajax({
-              url: fiveDayQueryURL,
-              method: "GET"
-            }).then(function (response) {
-              console.log("Brian");
-    
-              //Day 1
-              var iconCode = response.list[0].weather[0].icon;
-              var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
-              $("#tempTwo").text("Temp: " + parseInt(response.list[0].main.temp) + "° F");
-              $("#iconTwo").attr("src", iconURL);
-              $("#humidTwo").text("Humidity: " + response.list[0].main.humidity + "%");
-              $("#weatherIconTwo").attr("src", iconURL);
-              //Day 2
-              var iconCode = response.list[8].weather[0].icon;
-              var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
-              $("#tempThree").text("Temp: " + parseInt(response.list[8].main.temp) + "° F");
-              $("#iconThree").attr("src", iconURL);
-              $("#humidThree").text("Humidity: " + response.list[8].main.humidity + "%");
-              $("#weatherIconThree").attr("src", iconURL);
-              //Day 3
-              var iconCode = response.list[16].weather[0].icon;
-              var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
-              $("#tempFour").text("Temp: " + parseInt(response.list[16].main.temp) + "° F");
-              $("#iconFour").attr("src", iconURL);
-              $("#humidFour").text("Humidity: " + response.list[16].main.humidity + "%");
-              $("#weatherIconFour").attr("src", iconURL);
-              //Day 4
-              var iconCode = response.list[24].weather[0].icon;
-              var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
-              $("#tempFive").text("Temp: " + parseInt(response.list[24].main.temp) + "° F");
-              $("#iconFive").attr("src", iconURL);
-              $("#humidFive").text("Humidity: " + response.list[24].main.humidity + "%");
-              $("#weatherIconFive").attr("src", iconURL);
-              //Day 5
-              var iconCode = response.list[32].weather[0].icon;
-              var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
-              $("#tempSix").text("Temp: " + parseInt(response.list[32].main.temp) + "° F");
-              $("#iconSix").attr("src", iconURL);
-              $("#humidSix").text("Humidity: " + response.list[32].main.humidity + "%");
-              $("#weatherIconSix").attr("src", iconURL);
-    
-              var currentDay = moment().format('MMMM Do, YYYY');
-              $('#currentDay').text(currentDay);
-              var dayTwo = moment().add(1, 'days').format('l');
-              $('#dayOne').text(dayTwo.slice(0, 9));
-              var dayThree = moment().add(2, 'days').format('l');
-              $('#dayTwo').text(dayThree.slice(0, 9));
-              var dayFour = moment().add(3, 'days').format('l');
-              $('#dayThree').text(dayFour.slice(0, 9));
-              var dayFive = moment().add(4, 'days').format('l');
-              $('#dayFour').text(dayFive.slice(0, 9));
-              var daySix = moment().add(5, 'days').format('l');
-              $('#dayFive').text(daySix.slice(0, 9));
-    
-            })
-          }  
+    //Brittany edits
+
+    function fiveDay() {
+      var location = "Philadelphia"
+      var brittanyApiKey = "06606e544a946ac567964601f7ed0813";
+      var fiveDayQueryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=imperial&appid=" + brittanyApiKey;
+
+      $.ajax({
+        url: fiveDayQueryURL,
+        method: "GET"
+      }).then(function (response) {
+        console.log("Brian");
+
+        //Day 1
+        var iconCode = response.list[0].weather[0].icon;
+        var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+        $("#tempTwo").text("Temp: " + parseInt(response.list[0].main.temp) + "° F");
+        $("#iconTwo").attr("src", iconURL);
+        $("#humidTwo").text("Humidity: " + response.list[0].main.humidity + "%");
+        $("#weatherIconTwo").attr("src", iconURL);
+        //Day 2
+        var iconCode = response.list[8].weather[0].icon;
+        var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+        $("#tempThree").text("Temp: " + parseInt(response.list[8].main.temp) + "° F");
+        $("#iconThree").attr("src", iconURL);
+        $("#humidThree").text("Humidity: " + response.list[8].main.humidity + "%");
+        $("#weatherIconThree").attr("src", iconURL);
+        //Day 3
+        var iconCode = response.list[16].weather[0].icon;
+        var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+        $("#tempFour").text("Temp: " + parseInt(response.list[16].main.temp) + "° F");
+        $("#iconFour").attr("src", iconURL);
+        $("#humidFour").text("Humidity: " + response.list[16].main.humidity + "%");
+        $("#weatherIconFour").attr("src", iconURL);
+        //Day 4
+        var iconCode = response.list[24].weather[0].icon;
+        var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+        $("#tempFive").text("Temp: " + parseInt(response.list[24].main.temp) + "° F");
+        $("#iconFive").attr("src", iconURL);
+        $("#humidFive").text("Humidity: " + response.list[24].main.humidity + "%");
+        $("#weatherIconFive").attr("src", iconURL);
+        //Day 5
+        var iconCode = response.list[32].weather[0].icon;
+        var iconURL = "https://openweathermap.org/img/wn/" + iconCode + "@2x.png";
+        $("#tempSix").text("Temp: " + parseInt(response.list[32].main.temp) + "° F");
+        $("#iconSix").attr("src", iconURL);
+        $("#humidSix").text("Humidity: " + response.list[32].main.humidity + "%");
+        $("#weatherIconSix").attr("src", iconURL);
+
+        var currentDay = moment().format('MMMM Do, YYYY');
+        $('#currentDay').text(currentDay);
+        var dayTwo = moment().add(1, 'days').format('l');
+        $('#dayOne').text(dayTwo.slice(0, 9));
+        var dayThree = moment().add(2, 'days').format('l');
+        $('#dayTwo').text(dayThree.slice(0, 9));
+        var dayFour = moment().add(3, 'days').format('l');
+        $('#dayThree').text(dayFour.slice(0, 9));
+        var dayFive = moment().add(4, 'days').format('l');
+        $('#dayFour').text(dayFive.slice(0, 9));
+        var daySix = moment().add(5, 'days').format('l');
+        $('#dayFive').text(daySix.slice(0, 9));
+
+      })
+    }
 
     weatherAPI();
 
     fiveDay();
+    showTrafficJam();
   });
 
   //BRIAN EDITS
@@ -245,6 +250,7 @@ $(document).ready(function () {
     });
 
 
-    
-  
-}});
+
+
+  }
+});
